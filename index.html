@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Illaz NFT Collection</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="logo">
+        <img src="illaz.png">
+      </div>      
+      <p>Enter your illaz token ID below:</p>
+      <input type="text" id="tokenID">
+      <button onclick="getNFT()">Get NFT</button>
+      <div id="loading">
+        <img src="loading.png">
+      </div>
+      <div id="nft">
+      </div>
+      <div id="overlay-buttons">
+        <button class="overlay-button" onclick="overlayImage(document.getElementById('nft'), 'face tatto-01.png')">Tattoo 1</button>
+        <button class="overlay-button" onclick="overlayImage(document.getElementById('nft'), 'tattoo.png')">Tattoo 2</button>
+        <button class="overlay-button" onclick="overlayImage(document.getElementById('nft'), 'jacket.png')">Jacket 1</button>
+        <button class="overlay-button" onclick="overlayImage(document.getElementById('nft'), 'camo jacket-01.png')">Jacket 2</button>
+        <button class="overlay-button" onclick="overlayImage(document.getElementById('nft'), 'hoodie gray-01.png')">Gray Hoodie</button>
+        <button class="overlay-button" onclick="overlayImage(document.getElementById('nft'), 'hoodie green-01.png')">Green Hoodie</button>
+        <button class="overlay-button" onclick="overlayImage(document.getElementById('nft'), 'gm.png')">GM</button>
+        <button class="overlay-button" onclick="clearOverlays()">Clear Overlays</button>
+      </div>
+    <div>
+    <script src="script.js"></script>
+    </div>
+  </body>
+</html>
